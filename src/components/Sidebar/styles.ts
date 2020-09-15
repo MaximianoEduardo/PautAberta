@@ -9,6 +9,13 @@ export const Container = styled.div`
     flex-direction: column;
 `
 
+export const UpContent = styled.div`
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+`
+
 export const LogoImage = styled.div`
     padding:  30px 21px 0 17px;
     width: 100%;
@@ -26,7 +33,7 @@ export const LogoImage = styled.div`
     align-items: center;
     height: auto;
     width: 100%;
-    padding-top: min(calc(10vw - 39px), 39px);
+    padding-top: min(calc(10vw + 39px), 39px);
  `
 
  export const  LinkName = styled.h2`
@@ -34,21 +41,33 @@ export const LogoImage = styled.div`
     align-items: center;
     height: 62px;
     width: 100%;
-    font-weight: 1.25rem;
+    font-size: 1.25rem;
+    font-weight: normal;
     font-family: 'Mulish';
-    font-weight: 800;
-    color: var(--menuTitle);
+    color: var(--description);
+    letter-spacing: 0.2px;
+    transition: 300ms ease-in-out;
+    &.active, &:hover{
+        color: var(--menuTitle);
+        font-weight: 800;
+        background: var(--gray);
+    }
     & + &{
-        border: 1px solid var(--menuBorder);
+        border-bottom: 1px solid var(--menuBorder);
     }
     >img{
-        padding-left: 32px;
-        padding-right: 15px;
-         display: inline-block;
-         width: 25px;
-         height: 23px;
+        margin-left: 32px;
+        margin-right: 18px;
+        display: inline-block;
+        width: 25px;
+        height: 23px;
     }
  `
 
  export const  Config = styled.div`
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid var(--menuBorder);
+
  `
