@@ -33,9 +33,11 @@ export default createGlobalStyle`
         --greenBorder: #29CC97;
         --grayBorder: #DFE0EB;
         --redBorder: #C8372D;
+        --blueDescript: #0091FF;
         --yellow: #FEC400;
-        -gray: #C4C4C4;
+        --gray: #C4C4C4;
         --menuBorder: #E6E6E6;
         --menuTitle: #2F88A0;
+        --bgColor: #F7F8FC;
   }
 `
