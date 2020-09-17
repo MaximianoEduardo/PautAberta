@@ -4,7 +4,7 @@ export const Process = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: max(calc(100%), 482px);
+    width: 100%;
     height: 55px;
     border-radius: 8px;
     padding: 7px 12px 8px 24px;

@@ -5,7 +5,8 @@ interface Props {
     title?: string,
     link?: boolean,
     size?: string,
-    children?: React.ReactElement
+    column?: boolean,
+    children?: any
 }
 
 
@@ -13,12 +14,15 @@ const Wrapper: React.FC<Props> = ({
     title = '',
     link,
     size = '',
+    column,
     children
 }) => {
 
+    const  _column =  column ? 'column' :  ''
+
   return (
     <WrapperDiv 
-        className={size}
+        className={size + ' ' +  _column}
     >
      <Title>
          {title}
