@@ -1,10 +1,11 @@
 import React from 'react'
 import Card from '../Card'
 import Header from '../Header'
-import { Container, CardWrapper, ProcessWrapper, Row} from './style'
+import { Container, CardWrapper, ProcessWrapper, Tasks, Row} from './style'
 import ProcessList from '../ProcessList'
 import Wrapper from '../Wrapper'
-
+import Activities from '../Activities'
+import TodoApp from '../Todo'
 
 const Home = () => {
 
@@ -17,6 +18,7 @@ const Home = () => {
             <Wrapper 
                 title= 'Total de Processos'
                 size='fullWidth'
+                column
             >
 
                 <CardWrapper>
@@ -42,6 +44,43 @@ const Home = () => {
                 <div className="site-calendar-demo-card">
                 
                 </div>
+
+                <Tasks>
+
+                    <h2>Atividades do dia</h2>
+
+                    <div className="taskWrapper">
+
+                        <Activities
+                            title='Reunião PautAberta'
+                            date='9:00 AM — 10:00 AM'
+                            description='Reunião para decidir métricas'
+                            state='stoped'
+                        />
+                        <Activities
+                            title='Reunião PautAberta'
+                            date='9:00 AM — 10:00 AM'
+                            description='Reunião para decidir métricas'
+                            state='urgency'
+                        />
+                        <Activities
+                            title='Reunião PautAberta'
+                            date='9:00 AM — 10:00 AM'
+                            description='Reunião para decidir métricas'
+                            state='default'
+                        />
+                        <Activities
+                            title='Reunião PautAberta'
+                            date='9:00 AM — 10:00 AM'
+                            description='Reunião para decidir métricas'
+                            state='done'
+                        />
+
+
+                    </div>
+
+
+                </Tasks>
             </Wrapper>
 
 
@@ -49,6 +88,7 @@ const Home = () => {
                 <Wrapper
                     title='Ultimos processos'
                     link
+                    column
                     size='small'
                 >
                     <ProcessWrapper>
@@ -64,10 +104,10 @@ const Home = () => {
                 <Wrapper
                     title='Tarefas'
                     link
+                    column
                     size='small'
                 >
-                    <>
-                    </>
+                    <TodoApp />
                 </Wrapper>
             </Row>
 

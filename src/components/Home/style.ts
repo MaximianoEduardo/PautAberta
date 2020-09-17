@@ -30,7 +30,8 @@ export const Row = styled.div`
     width: 100%;
     height: auto;
     justify-content: space-between;
-`
+    padding-top: min(calc(100% - 29px), 29px) ;
+    `
 
 export const CardWrapper = styled.div`
     display: flex;
@@ -60,4 +61,33 @@ export const  ProcessWrapper  = styled.div`
     flex-direction: column;
     padding-top: min(calc( 10vw + 23px), 23px);
     width: 100%;
+`
+export const Tasks = styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 49.9%;
+    height: auto;
+    h2{
+        font-size: 1.1875rem;
+        font-family: 'Mulish';
+        font-weight: bold;
+        color: var(--primary);
+        letter-spacing: 0.4px;
+        padding-bottom: min(calc(10vw + 17px), 17px);
+        display: flex;
+        width: 100;
+        justify-content: space-between;
+        align-items: center;
+        > a  {
+            color: var(--secondary);
+            font-weight: bold;
+            font-size:  0.875rem;
+            letter-spacing: 0.2px;
+        }
+    }
+    .taskWrapper{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
 `

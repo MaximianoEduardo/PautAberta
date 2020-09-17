@@ -2,18 +2,25 @@ import styled from "styled-components"
 
 export const WrapperDiv = styled.div`
     display: flex;
-    flex-direction: column;
     width: auto;
     height: auto;
     background: var(--white);
     border: 1px solid var(--grayBorder);
     border-radius: 8px;
     padding: 24px 27px;
+    justify-content: space-between;
+    & + &{
+        margin-top: min(calc(100% - 11px),11px);
+    }
+    &.column{
+        flex-direction: column;
+    }
     &.fullWidth{
-        width: 100%
+        width: 100%;
     }
     &.small{
         width: max(calc(50vw), 546px);
+        margin: 0;
         & + &{
             margin-left: 30px;
         }

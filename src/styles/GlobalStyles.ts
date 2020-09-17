@@ -8,10 +8,8 @@ export default createGlobalStyle`
         color: var(--white);
     }
     html, body, #root {
-        max-height: 100vh;
-        max-width: 100vw;
-        width: 100%;
-        height: 100%;
+       height: 100vh;
+       width: 100vw;
         font-size: 16px;
     }
     *, button, input{
@@ -20,7 +18,7 @@ export default createGlobalStyle`
         font-family: 'Mulish', 'Helvetica Neue', sans-serif
     }
     html {
-        background: var(--white);
+        background: var(--bgColor);
     }
     :root {
         --primary: #252733;
@@ -39,5 +37,7 @@ export default createGlobalStyle`
         --menuBorder: #E6E6E6;
         --menuTitle: #2F88A0;
         --bgColor: #F7F8FC;
+        --activeDescription: #787885;
+        --buttonBackground: #F0F1F7;
   }
 `

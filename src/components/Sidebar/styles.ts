@@ -3,10 +3,12 @@ import styled from 'styled-components';
 export const Container = styled.div`
     display: flex;
     align-items: center;
+    background: var(--white);
     box-shadow: -4px 0px 19px 8px rgba(0, 0, 0, 0.15);
-    height: 100%;
+    height: 100vh;
     width: 255px;
     flex-direction: column;
+    justify-content: space-between;
 `
 
 export const UpContent = styled.div`
