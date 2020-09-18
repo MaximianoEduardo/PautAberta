@@ -1,0 +1,67 @@
+{
+    "users" : [
+        {
+            "id": 1,
+            "name":  "Marcos Andrade",
+            "notification": null,
+            "allProcess":[
+                {
+                    "working" : {
+                        "state": "Em andamento",
+                        "number": 60
+                    },
+                    "done": {
+                        "state": "Resolvidos",
+                        "number": 16
+                    },
+                    "default": {
+                        "state": "Abertos",
+                        "number": 43
+                    },
+                    "stopped": {
+                        "state": "Aguardando",
+                        "number": 64
+                    }
+                }
+            ],
+            "processInfo":[
+                {
+                    
+                    "id":  48839482,
+                    "state": "Urgente",
+                    "updateTime": "Atualizado 1 dia(s) atrás"
+                    
+                },
+                {
+                   
+                    "id":  48839483,
+                    "state": "Alta",
+                    "updateTime": "Atualizado 1 dia(s) atrás"
+                
+                },
+                {
+                    
+                    "id":  48839484,
+                    "state": "Normal",
+                    "updateTime": "Atualizado 1 dia(s) atrás"
+                
+                },
+                {
+                    
+                    "id":  48839485,
+                    "state": "Finalizado",
+                    "updateTime": "Atualizado 3 dia(s) atrás"
+                
+                },
+                {
+                    
+                    "id":  48839486,
+                    "state": "Finalizado",
+                    "updateTime": "Atualizado 4 dia(s) atrás"
+                
+                }
+            ]
+        }
+    ]
+    
+}
