@@ -1,7 +1,7 @@
 import React from 'react'
 import Card from '../Card'
 import Header from '../Header'
-import { Container, CardWrapper, ProcessWrapper, Tasks, Row} from './style'
+import { Container, CardWrapper, ProcessWrapper, Row} from './style'
 import ProcessList from '../ProcessList'
 import Wrapper from '../Wrapper'
 import Activities from '../Activities'
@@ -40,14 +40,10 @@ const Home = () => {
             <Wrapper
                 title='Agenda'
                 size='fullWidth'
+                column
             >
-                <div className="site-calendar-demo-card">
+        
                 
-                </div>
-
-                <Tasks>
-
-                    <h2>Atividades do dia</h2>
 
                     <div className="taskWrapper">
 
@@ -80,7 +76,6 @@ const Home = () => {
                     </div>
 
 
-                </Tasks>
             </Wrapper>
 
 

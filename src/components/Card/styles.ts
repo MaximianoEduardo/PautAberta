@@ -48,4 +48,8 @@ export const CardStyled = styled.div`
             color: var(--redBorder);
         }
     }
+    @media screen and (max-width: 800px){
+        width: 100%;
+        margin: 0 0 24px;
+    }
 `;
