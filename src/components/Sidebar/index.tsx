@@ -9,9 +9,20 @@ import money from '../../images/money.svg'
 import presentation from '../../images/presentation.svg'
 import config from '../../images/gear.svg'
 
-const Sidebar: React.FC = () => {
+interface Props{
+
+  showSidebar: boolean
+
+}
+
+const Sidebar: React.FC<Props> = ({ showSidebar }) => {
+
+  const show = showSidebar ? 'true' : 'false'
+
   return (
-      <Container>
+
+
+      <Container className={show}>
 
           <UpContent>
 

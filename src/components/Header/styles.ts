@@ -8,6 +8,9 @@ export const Container = styled.div`
     min-width: max(calc(100vw - 255px),255px);
     background: var(--bgColor);
     padding: 26px 30px;
+    @media screen and (max-width: 800px){
+        width: 100%
+    }
 `
 
 export const HeaderContent = styled.div`
@@ -16,6 +19,9 @@ export const HeaderContent = styled.div`
     justify-content: space-between;
     width: 100%;
     height: auto;
+    @media screen and (max-width: 800px){
+        flex-direction: column
+    }
 `
 
 export const Title = styled.h1`

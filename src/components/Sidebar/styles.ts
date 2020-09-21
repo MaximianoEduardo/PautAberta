@@ -9,6 +9,9 @@ export const Container = styled.div`
     width: 255px;
     flex-direction: column;
     justify-content: space-between;
+    &.false{
+        display: none
+    }
 `
 
 export const UpContent = styled.div`

@@ -31,6 +31,9 @@ export const Row = styled.div`
     height: auto;
     justify-content: space-between;
     padding-top: min(calc(100% - 29px), 29px) ;
+    @media screen and (max-width: 800px){
+        flex-direction: column
+    }
     `
 
 export const CardWrapper = styled.div`
@@ -42,6 +45,9 @@ export const CardWrapper = styled.div`
         &:last-child{
             margin-right: unset;
         }
+    }
+    @media screen and (max-width: 800px){
+        flex-direction: column
     }
 `
 
